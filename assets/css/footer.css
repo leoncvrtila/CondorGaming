@@ -1,0 +1,28 @@
+/*-----------------RESPONSIVE*/
+/*-----------------FOOTER*/
+footer {
+  border-top: 1px solid #d9d9d9;
+  padding: 1%;
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 425px) {
+  footer {
+    padding: 5%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    padding: 3%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  footer {
+    padding: 2%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

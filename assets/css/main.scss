@@ -1,0 +1,750 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*-----------------MAIN*/
+
+#MainAboutUs section {
+    margin: 3% auto;
+
+}
+
+section {
+    width: 65%;
+    margin: 6% auto;
+    text-align: center;
+
+    @include respond-to(mob) { 
+
+    }
+    @include respond-to(medium-screens) { 
+      width: 75%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#MainAboutUs p, #MainHome p {
+    font-size: 14px;
+    margin: 1% 0%;
+
+    @include respond-to(mob) { 
+      margin: 6% 0%;
+    }
+    @include respond-to(medium-screens) { 
+      margin: 6% 0%;
+    }
+    @include respond-to(laptop-screens) { 
+      margin: 4% 0%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+section h1 {
+    color: #e40e76;
+    margin-bottom: 4%;
+    font-size: 36px;
+
+    @include respond-to(mob) { 
+      font-size: 30px;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#BrandsWrapp {
+    @extend .flex;
+}
+
+.Brand {
+    width: 15%;
+
+    @include respond-to(mob) { 
+      width: 45%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 30%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.Brand img {
+    width: 100%;
+}
+
+#MainContactWrapp {
+    @extend .flex;
+}
+
+.MainContact {
+    width: 23%;
+
+    @include respond-to(mob) { 
+      width: 45%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 45%;
+      margin-bottom: 4%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.MainContact img { 
+
+  @include respond-to(mob) { 
+    width: 55%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+
+}
+
+.MainContact h5 {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+    margin: 4% 0%;
+}
+
+.MainContact p {
+    font-size: 12px;
+    color: #333;
+}
+
+#BrandsWrappAboutUs {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    @extend .flex;
+}
+
+.BrandAboutUs {
+    width: 15%;
+    margin: auto;
+
+    @include respond-to(mob) { 
+      width: 45%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 30%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.BrandAboutUs img {
+    width: 85%;
+}
+
+.BrandOurBrands {
+    display: flex;
+    margin: 3% 0%;
+
+    @include respond-to(mob) { 
+      display: block;
+      margin: 18% 0%;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.BrandOurBrands > div:first-child {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    margin-right: 3%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 3%;
+    }
+    @include respond-to(medium-screens) { 
+      margin: auto;
+      justify-content: center;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.BrandOurBrands > div:last-child {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 60%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.BrandOurBrands img {
+    width: 50%; 
+    height: fit-content;
+}
+.BrandOurBrands p {
+    color: #3a3a3a;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#KeyPoints {
+    @extend .flex;
+}
+
+.KeyPoint {
+    width: 25%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+      margin-bottom: 10%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 28%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.KeyPoint h2 {
+    color: #e40e76;
+    font-size: 30px;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.KeyPoint p {
+    font-size: 14px;
+    color: #606060;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.SubText {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    color: #3a3a3a;
+}
+
+#MainCareers h1 {
+    text-align: center;
+    color: #0a0500;
+    font-weight: 400;
+    margin: 3% 0%;
+
+    @include respond-to(mob) { 
+      font-size: 30px;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+.accordion-container{
+    position: relative;
+    max-width: 75%;
+    height: auto;
+    margin: 2% auto;
+    text-align: left;
+
+    @include respond-to(mob) { 
+      max-width: 100%;
+    }
+    @include respond-to(medium-screens) { 
+      max-width: 90%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  .accordion-container > h2{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .set{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: none;
+    margin: 2% 0%;
+    border: 1px solid #f400c7;
+    border-radius: 5px;
+  }
+  .set > a{
+    display: block;
+    padding: 2%;
+    text-decoration: none;
+    color: #555;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    font-size: 18px;
+
+    @include respond-to(mob) { 
+      padding: 5%;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  .set > a i{
+    float: right;
+    margin-top: 2px;
+  }
+  .set > a.active{
+    color: #555;
+  }
+  .content{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display:none;
+  }
+  .content p{
+    padding: 10px 15px;
+    margin: 0;
+    color: gray;
+  }
+
+  .fa-plus::after {
+    content: '+';
+  }
+
+  .fa-minus::after{
+    content: '-';
+  }
+
+  .ApplyBtn {
+    padding: 0.5%;
+    width: 12%;
+    cursor: pointer;
+    float: left;
+    margin-left: 12.5%;
+
+    @include respond-to(mob) { 
+      float: none;
+      width: 45%;
+      margin-left: 0%;
+      margin-top: 2%;
+    }
+    @include respond-to(medium-screens) { 
+      float: none;
+      width: 20%;
+      margin-left: 0%;
+      margin-top: 2%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 20%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+
+  .ApplyBtn img {
+    height: 22px;
+  }
+
+  .ApplyBtn > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ApplyBtn > div > div:first-child {
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ApplyBtn > div > div:last-child {
+    width: 35%;
+  }
+
+  #CareersContact {
+    @extend .flex;
+    width: 65%;
+    margin: auto;
+
+    @include respond-to(mob) { 
+      display: block;
+      width: 85%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 85%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+
+  #CareersContact > div:first-child {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+
+    @include respond-to(mob) { 
+      width: 80%;
+      margin: auto;
+      margin-bottom: 6%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 45%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 45%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#CareersContact > div:last-child {
+  width: 45%;
+
+  @include respond-to(mob) { 
+    width: 80%;
+    margin: auto;
+  }
+  @include respond-to(medium-screens) { 
+    width: 45%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 45%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#CareersContact iframe {
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 100%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 100%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#MainCareers section:last-child {
+  padding: 5% 0%;
+  background-color: #19000f38;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.input {
+  padding: 3% 4%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  @include respond-to(mob) { 
+    margin: 2% 0%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.textarea {
+  height: 180px;
+  padding: 3% 4%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  @include respond-to(mob) { 
+    margin: 2% 0%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#CareersContact input {
+  @extend .input;
+
+}
+
+#CareersContact textarea {
+  @extend .textarea;
+
+
+}
+
+#CareersContact button {
+  width: 20%;
+  padding: 2%;
+  color: white;
+  background-color: #428bca;
+  border: 1px solid #2e78b9;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+  @include respond-to(mob) { 
+    margin-top: 3%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ContactWrapp {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+
+  @include respond-to(mob) { 
+    display: block;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#FormWrapp h1 {
+  font-weight: 400;
+}
+
+#FormWrapp h4 {
+  margin-bottom: 5%;
+  font-weight: 400;
+  color: #e40175;
+}
+
+#FormWrapp label {
+  margin-bottom: 1%;
+}
+
+#FormWrapp button {
+  margin-top: 3%;
+  border: 1px solid #979797;
+  border-color: #e40175;
+  width: 18%;
+  padding: 3% 4%;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @include respond-to(mob) { 
+    width: 30%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 30%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 25%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#FormWrapp input {
+  margin-bottom: 5%;
+  @extend .input;
+}
+
+#FormWrapp textarea {
+  @extend .textarea;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#ContactWrapp > div:first-child {
+  width: 30%;
+
+  @include respond-to(mob) { 
+    width: 95%;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 45%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 45%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ContactWrapp > div:last-child {
+  width: 45%;
+
+  @include respond-to(mob) { 
+    width: 95%;
+    margin: auto;
+  }
+  @include respond-to(medium-screens) { 
+    width: 45%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 45%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ContactWrapp iframe {
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 100%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 100%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ContactWrapp > div:last-child p {
+  font-weight: 600;
+  margin-bottom: 3%;
+}

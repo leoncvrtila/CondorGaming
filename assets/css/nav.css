@@ -1,0 +1,149 @@
+/*-----------------RESPONSIVE*/
+/*-----------------NAV*/
+nav {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#NavWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+  margin: auto;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 425px) {
+  #NavWrapp {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #NavWrapp {
+    width: 75%;
+    padding: 2%;
+  }
+}
+
+#NavWrapp div:first-child img {
+  width: 45%;
+}
+
+@media only screen and (max-width: 425px) {
+  #NavWrapp div:first-child img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #NavWrapp div:first-child img {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #NavWrapp div:first-child img {
+    width: 85%;
+  }
+}
+
+#NavWrapp > div:first-child {
+  width: 65%;
+}
+
+@media only screen and (max-width: 425px) {
+  #NavWrapp > div:first-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #NavWrapp > div:first-child {
+    width: 38%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #NavWrapp > div:first-child {
+    width: 38%;
+  }
+}
+
+#NavWrapp > div:last-child {
+  width: 35%;
+}
+
+@media only screen and (max-width: 425px) {
+  #NavWrapp > div:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #NavWrapp > div:last-child {
+    width: 62%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #NavWrapp > div:last-child {
+    width: 62%;
+  }
+}
+
+#NavLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  #NavLinks {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #NavLinks > div {
+    text-align: center;
+    margin: 3% 0%;
+  }
+}
+
+#NavLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+#NavLinks a:hover {
+  color: #db48c5;
+  cursor: pointer;
+}
+
+.MobNavIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .MobNavIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.MobNavIcon img {
+  width: 20%;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,143 @@
+/*-----------------RESPONSIVE*/
+.bg, #HeaderBg, #HeaderBgAboutUs, #HeaderBgCareers {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1c1c42;
+  padding: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-attachment: scroll;
+}
+
+/*-----------------HEADER*/
+#HeaderBg {
+  background-image: url(https://condor-gaming.com/wp-content/uploads/2020/08/Banner3-1.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+}
+
+#HeaderBg img {
+  height: 90%;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderBg img {
+    height: 25%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #HeaderBg img {
+    height: 45%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #HeaderBg img {
+    height: 65%;
+    margin: auto;
+  }
+}
+
+#HeaderBgAboutUs {
+  background-image: url(https://condor-gaming.com/wp-content/uploads/2021/02/condor-gaming-about-us-2-1.jpg);
+  height: 200px;
+}
+
+#HeaderBgCareers {
+  background-image: url(https://condor-gaming.com/wp-content/uploads/2020/09/background-join.png);
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderBgCareers img {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #HeaderBgCareers img {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #HeaderBgCareers img {
+    width: 65%;
+  }
+}
+
+#HeaderBgContact {
+  height: 250px;
+  padding: 7%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderBgContact {
+    height: 260px;
+  }
+}
+
+#HeaderContactWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 55%;
+  margin: auto;
+  color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderContactWrapp {
+    width: 95%;
+  }
+}
+
+.HeaderContact {
+  width: 30%;
+  text-align: center;
+}
+
+.HeaderContact img {
+  height: 70px;
+}
+
+.HeaderContact > div:last-child {
+  margin-top: 10%;
+}
+
+#HeaderBgContact h1 {
+  color: #e40175;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 6%;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderBgContact h1 {
+    margin-bottom: 10%;
+  }
+}
+
+#ContactWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=header.css.map */

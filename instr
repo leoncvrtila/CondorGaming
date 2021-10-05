@@ -1,0 +1,23 @@
+Please use the following technologies and approach for the frontend task:
+
+- HTML5
+- CSS3 
+- SCSS/SASS (or any other CSS pre-processor)
+- JavaScript / jQuery 
+- Bootstrap V3 / V4
+- at least 1 jQuery (JS) plugin
+- at least 1 jQuery UI feature
+- provide minimum SEO on-page setup 
+- fully responsive (mobile first) approach 
+- try to follow best practices and provide valid HTML 
+
+Please select one of the three projects above and create a new landing page (SPA) which will cover the most crucial information for the company:
+
+- introduction
+- info about the company
+- references / more specific info what company provides
+- contact info
+- related web pages
+- other info if you find it necessary
+
+https://condor-gaming.com/

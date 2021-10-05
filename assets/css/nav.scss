@@ -1,0 +1,171 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------NAV*/
+
+nav {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#NavWrapp {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+    padding: 1%;
+
+    @include respond-to(mob) { 
+      display: block;
+    }
+    @include respond-to(medium-screens) { 
+      width: 75%;
+      padding: 2%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#NavWrapp div:first-child img {
+    width: 45%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 85%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 85%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#NavWrapp > div:first-child {
+    width: 65%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 38%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 38%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#NavWrapp > div:last-child {
+    width: 35%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 62%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 62%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+
+#NavLinks {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    @include respond-to(mob) { 
+      display: none;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#NavLinks > div {
+  
+  @include respond-to(mob) { 
+    text-align: center;
+    margin: 3% 0%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#NavLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+#NavLinks a:hover {
+    color: #db48c5;
+    cursor: pointer;
+}
+
+.MobNavIcon {
+  display: none;
+
+  @include respond-to(mob) { 
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.MobNavIcon img {
+  width: 20%;
+}

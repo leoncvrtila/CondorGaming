@@ -1,0 +1,45 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------FOOTER*/
+
+footer {
+    border-top: 1px solid #d9d9d9;
+    padding: 1%;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+
+    @include respond-to(mob) { 
+      padding: 5%;
+    }
+    @include respond-to(medium-screens) { 
+      padding: 3%;
+    }
+    @include respond-to(laptop-screens) { 
+      padding: 2%;
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}

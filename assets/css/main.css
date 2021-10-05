@@ -1,0 +1,716 @@
+/*-----------------RESPONSIVE*/
+.flex, #BrandsWrapp, #MainContactWrapp, #BrandsWrappAboutUs, #KeyPoints, #CareersContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*-----------------MAIN*/
+#MainAboutUs section {
+  margin: 3% auto;
+}
+
+section {
+  width: 65%;
+  margin: 6% auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  section {
+    width: 75%;
+  }
+}
+
+#MainAboutUs p, #MainHome p {
+  font-size: 14px;
+  margin: 1% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #MainAboutUs p, #MainHome p {
+    margin: 6% 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MainAboutUs p, #MainHome p {
+    margin: 6% 0%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MainAboutUs p, #MainHome p {
+    margin: 4% 0%;
+  }
+}
+
+section h1 {
+  color: #e40e76;
+  margin-bottom: 4%;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 425px) {
+  section h1 {
+    font-size: 30px;
+  }
+}
+
+.Brand {
+  width: 15%;
+}
+
+@media only screen and (max-width: 425px) {
+  .Brand {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .Brand {
+    width: 30%;
+  }
+}
+
+.Brand img {
+  width: 100%;
+}
+
+.MainContact {
+  width: 23%;
+}
+
+@media only screen and (max-width: 425px) {
+  .MainContact {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .MainContact {
+    width: 45%;
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .MainContact img {
+    width: 55%;
+  }
+}
+
+.MainContact h5 {
+  font-size: 14px;
+  color: gray;
+  font-weight: 300;
+  margin: 4% 0%;
+}
+
+.MainContact p {
+  font-size: 12px;
+  color: #333;
+}
+
+#BrandsWrappAboutUs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.BrandAboutUs {
+  width: 15%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .BrandAboutUs {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .BrandAboutUs {
+    width: 30%;
+  }
+}
+
+.BrandAboutUs img {
+  width: 85%;
+}
+
+.BrandOurBrands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  .BrandOurBrands {
+    display: block;
+    margin: 18% 0%;
+  }
+}
+
+.BrandOurBrands > div:first-child {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 3%;
+}
+
+@media only screen and (max-width: 425px) {
+  .BrandOurBrands > div:first-child {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .BrandOurBrands > div:first-child {
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.BrandOurBrands > div:last-child {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 425px) {
+  .BrandOurBrands > div:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .BrandOurBrands > div:last-child {
+    width: 60%;
+  }
+}
+
+.BrandOurBrands img {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.BrandOurBrands p {
+  color: #3a3a3a;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.KeyPoint {
+  width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+  .KeyPoint {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .KeyPoint {
+    width: 28%;
+  }
+}
+
+.KeyPoint h2 {
+  color: #e40e76;
+  font-size: 30px;
+  margin-bottom: 3%;
+  text-align: left;
+}
+
+.KeyPoint p {
+  font-size: 14px;
+  color: #606060;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.SubText {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 5%;
+  color: #3a3a3a;
+}
+
+#MainCareers h1 {
+  text-align: center;
+  color: #0a0500;
+  font-weight: 400;
+  margin: 3% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #MainCareers h1 {
+    font-size: 30px;
+  }
+}
+
+.accordion-container {
+  position: relative;
+  max-width: 75%;
+  height: auto;
+  margin: 2% auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 425px) {
+  .accordion-container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .accordion-container {
+    max-width: 90%;
+  }
+}
+
+.accordion-container > h2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.set {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: none;
+  margin: 2% 0%;
+  border: 1px solid #f400c7;
+  border-radius: 5px;
+}
+
+.set > a {
+  display: block;
+  padding: 2%;
+  text-decoration: none;
+  color: #555;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 425px) {
+  .set > a {
+    padding: 5%;
+  }
+}
+
+.set > a i {
+  float: right;
+  margin-top: 2px;
+}
+
+.set > a.active {
+  color: #555;
+}
+
+.content {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+
+.content p {
+  padding: 10px 15px;
+  margin: 0;
+  color: gray;
+}
+
+.fa-plus::after {
+  content: '+';
+}
+
+.fa-minus::after {
+  content: '-';
+}
+
+.ApplyBtn {
+  padding: 0.5%;
+  width: 12%;
+  cursor: pointer;
+  float: left;
+  margin-left: 12.5%;
+}
+
+@media only screen and (max-width: 425px) {
+  .ApplyBtn {
+    float: none;
+    width: 45%;
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .ApplyBtn {
+    float: none;
+    width: 20%;
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .ApplyBtn {
+    width: 20%;
+  }
+}
+
+.ApplyBtn img {
+  height: 22px;
+}
+
+.ApplyBtn > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ApplyBtn > div > div:first-child {
+  width: 65%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ApplyBtn > div > div:last-child {
+  width: 35%;
+}
+
+#CareersContact {
+  width: 65%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  #CareersContact {
+    display: block;
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #CareersContact {
+    width: 85%;
+  }
+}
+
+#CareersContact > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+  #CareersContact > div:first-child {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 6%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #CareersContact > div:first-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #CareersContact > div:first-child {
+    width: 45%;
+  }
+}
+
+#CareersContact > div:last-child {
+  width: 45%;
+}
+
+@media only screen and (max-width: 425px) {
+  #CareersContact > div:last-child {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #CareersContact > div:last-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #CareersContact > div:last-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #CareersContact iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #CareersContact iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #CareersContact iframe {
+    width: 100%;
+  }
+}
+
+#MainCareers section:last-child {
+  padding: 5% 0%;
+  background-color: #19000f38;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.input, #CareersContact input, #FormWrapp input {
+  padding: 3% 4%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+  .input, #CareersContact input, #FormWrapp input {
+    margin: 2% 0%;
+  }
+}
+
+.textarea, #CareersContact textarea, #FormWrapp textarea {
+  height: 180px;
+  padding: 3% 4%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+  .textarea, #CareersContact textarea, #FormWrapp textarea {
+    margin: 2% 0%;
+  }
+}
+
+#CareersContact button {
+  width: 20%;
+  padding: 2%;
+  color: white;
+  background-color: #428bca;
+  border: 1px solid #2e78b9;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  #CareersContact button {
+    margin-top: 3%;
+  }
+}
+
+#ContactWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+}
+
+@media only screen and (max-width: 425px) {
+  #ContactWrapp {
+    display: block;
+  }
+}
+
+#FormWrapp h1 {
+  font-weight: 400;
+}
+
+#FormWrapp h4 {
+  margin-bottom: 5%;
+  font-weight: 400;
+  color: #e40175;
+}
+
+#FormWrapp label {
+  margin-bottom: 1%;
+}
+
+#FormWrapp button {
+  margin-top: 3%;
+  border: 1px solid #979797;
+  border-color: #e40175;
+  width: 18%;
+  padding: 3% 4%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  #FormWrapp button {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #FormWrapp button {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #FormWrapp button {
+    width: 25%;
+  }
+}
+
+#FormWrapp input {
+  margin-bottom: 5%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ContactWrapp > div:first-child {
+  width: 30%;
+}
+
+@media only screen and (max-width: 425px) {
+  #ContactWrapp > div:first-child {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #ContactWrapp > div:first-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #ContactWrapp > div:first-child {
+    width: 45%;
+  }
+}
+
+#ContactWrapp > div:last-child {
+  width: 45%;
+}
+
+@media only screen and (max-width: 425px) {
+  #ContactWrapp > div:last-child {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #ContactWrapp > div:last-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #ContactWrapp > div:last-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #ContactWrapp iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #ContactWrapp iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #ContactWrapp iframe {
+    width: 100%;
+  }
+}
+
+#ContactWrapp > div:last-child p {
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+/*# sourceMappingURL=main.css.map */

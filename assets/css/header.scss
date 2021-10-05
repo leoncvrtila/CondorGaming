@@ -1,0 +1,171 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+.bg {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1c1c42;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    background-attachment: scroll;
+}
+
+/*-----------------HEADER*/
+
+#HeaderBg {
+    background-image: url(https://condor-gaming.com/wp-content/uploads/2020/08/Banner3-1.png);
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    @extend .bg;
+}
+
+#HeaderBg img {
+  height: 90%;
+
+  @include respond-to(mob) { 
+    height: 25%;
+    margin: auto;
+  }
+  @include respond-to(medium-screens) { 
+    height: 45%;
+    margin: auto;
+  }
+  @include respond-to(laptop-screens) { 
+    height: 65%;
+    margin: auto;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderBgAboutUs { //  
+    background-image: url(https://condor-gaming.com/wp-content/uploads/2021/02/condor-gaming-about-us-2-1.jpg);
+    height: 200px;
+    @extend .bg;
+}
+
+#HeaderBgCareers {
+  background-image: url(https://condor-gaming.com/wp-content/uploads/2020/09/background-join.png);
+  //height: 200px;
+  @extend .bg;
+
+  
+}
+
+#HeaderBgCareers img {
+  @include respond-to(mob) { 
+    width: 75%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 75%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 65%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderBgContact {
+  height: 250px;
+  padding: 7%;
+  background-color: black;
+
+  @include respond-to(mob) { 
+    height: 260px;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderContactWrapp {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 55%;
+  margin: auto;
+  color: white;
+
+  @include respond-to(mob) { 
+    width: 95%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.HeaderContact {
+  width: 30%;
+  text-align: center;
+}
+
+.HeaderContact img {
+  height: 70px;
+}
+
+.HeaderContact > div:last-child {
+  margin-top: 10%;
+}
+
+#HeaderBgContact h1{
+  color: #e40175;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 6%;
+
+  @include respond-to(mob) { 
+    margin-bottom: 10%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ContactWrapp {
+  display: flex;
+}
+
